@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "generate-course-config": {
+      "source": "RJiazhen/learn-by-diff",
+      "sourceType": "github",
+      "skillPath": "skills/generate-course-config/SKILL.md",
+      "computedHash": "fe43f91384c2106f5be8da6850b75a60c6a43d55d8291046901876cf707f94ec"
+    }
+  }
+}
