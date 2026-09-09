@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: sfc-prerequisite
+title: "使用 SFC 开发（外围知识）"
+fromDir: "10_minimum_example/060_template_compiler3"
+toDir: "10_minimum_example/070_sfc_compiler"
+docs: https://book.chibivue.land/zh-cn/10-minimum-example/090-prerequisite-knowledge-for-the-sfc

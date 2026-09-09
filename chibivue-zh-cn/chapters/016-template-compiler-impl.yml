@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: template-compiler-impl
+title: "实现模板编译器"
+fromDir: "10_minimum_example/050_component_system3"
+toDir: "10_minimum_example/060_template_compiler"
+docs: https://book.chibivue.land/zh-cn/10-minimum-example/061-template-compiler-impl

@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: what-is-vue
+title: "什么是 Vue.js？"
+fromDir: ""
+toDir: ""
+docs: https://book.chibivue.land/zh-cn/00-introduction/020-what-is-vue

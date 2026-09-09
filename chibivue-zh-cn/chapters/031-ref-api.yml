@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: ref-api
+title: "ref API"
+fromDir: "20_basic_virtual_dom/060_other_props"
+toDir: "30_basic_reactivity_system/010_ref"
+docs: https://book.chibivue.land/zh-cn/30-basic-reactivity-system/010-ref-api

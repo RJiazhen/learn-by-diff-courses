@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: effect-scope
+title: "Effect 作用域"
+fromDir: "30_basic_reactivity_system/130_cleanup_effects"
+toDir: "30_basic_reactivity_system/140_effect_scope"
+docs: https://book.chibivue.land/zh-cn/30-basic-reactivity-system/040-effect-scope

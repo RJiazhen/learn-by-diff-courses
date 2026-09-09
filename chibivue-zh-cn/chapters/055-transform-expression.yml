@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: transform-expression
+title: "在模板中求值表达式"
+fromDir: "50_basic_template_compiler/020_v_bind"
+toDir: "50_basic_template_compiler/022_transform_expression"
+docs: https://book.chibivue.land/zh-cn/50-basic-template-compiler/022-transform-expression

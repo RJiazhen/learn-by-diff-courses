@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: resolve-component
+title: "解析组件"
+fromDir: "50_basic_template_compiler/050_v_for"
+toDir: "50_basic_template_compiler/060_resolve_components"
+docs: https://book.chibivue.land/zh-cn/50-basic-template-compiler/070-resolve-component

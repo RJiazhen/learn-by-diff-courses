@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: hyper-ultimate-super-extreme-minimal-vue
+title: "chibivue，不是很小吗...？"
+fromDir: ""
+toDir: ""
+docs: https://book.chibivue.land/zh-cn/bonus/hyper-ultimate-super-extreme-minimal-vue/

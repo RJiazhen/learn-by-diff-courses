@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: type-based-macros
+title: "基于类型的 defineProps/defineEmits"
+fromDir: "60_basic_sfc_compiler/050_props_destructure"
+toDir: "60_basic_sfc_compiler/060_type_based_macros"
+docs: https://book.chibivue.land/zh-cn/60-basic-sfc-compiler/060-type-based-macros

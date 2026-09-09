@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: shallow-ref
+title: "shallowRef"
+fromDir: "30_basic_reactivity_system/010_ref"
+toDir: "30_basic_reactivity_system/020_shallow_ref"
+docs: https://book.chibivue.land/zh-cn/30-basic-reactivity-system/010-ref-api

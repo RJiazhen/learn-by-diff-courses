@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: other-reactivity-apis
+title: "其他响应式 API"
+fromDir: "30_basic_reactivity_system/140_effect_scope"
+toDir: "30_basic_reactivity_system/150_other_apis"
+docs: https://book.chibivue.land/zh-cn/30-basic-reactivity-system/050-other-apis

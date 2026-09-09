@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: define-props
+title: "支持 defineProps"
+fromDir: "60_basic_sfc_compiler/010_script_setup"
+toDir: "60_basic_sfc_compiler/020_define_props"
+docs: https://book.chibivue.land/zh-cn/60-basic-sfc-compiler/020-define-props

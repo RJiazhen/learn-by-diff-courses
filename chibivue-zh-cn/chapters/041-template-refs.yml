@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: template-refs
+title: "实现 TemplateRefs"
+fromDir: "30_basic_reactivity_system/100_reactive_proxy_target_type"
+toDir: "30_basic_reactivity_system/110_template_refs"
+docs: https://book.chibivue.land/zh-cn/30-basic-reactivity-system/030-reactive-proxy-handlers

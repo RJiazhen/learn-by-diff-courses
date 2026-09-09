@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: options-api
+title: "支持 Options API"
+fromDir: "40_basic_component_system/060_slot_extend"
+toDir: "40_basic_component_system/070_options_api"
+docs: https://book.chibivue.land/zh-cn/40-basic-component-system/050-options-api

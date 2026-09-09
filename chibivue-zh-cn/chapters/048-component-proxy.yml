@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: component-proxy
+title: "组件代理"
+fromDir: "40_basic_component_system/020_provide_inject"
+toDir: "40_basic_component_system/030_component_proxy"
+docs: https://book.chibivue.land/zh-cn/40-basic-component-system/030-component-proxy-setup-context

@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: next-tick
+title: "nextTick"
+fromDir: "20_basic_virtual_dom/040_scheduler"
+toDir: "20_basic_virtual_dom/050_next_tick"
+docs: https://book.chibivue.land/zh-cn/20-basic-virtual-dom/030-scheduler

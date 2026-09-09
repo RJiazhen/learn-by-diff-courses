@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: simple-h-function
+title: "让我们启用 HTML 元素渲染"
+fromDir: "10_minimum_example/015_package_architecture"
+toDir: "10_minimum_example/020_simple_h_function"
+docs: https://book.chibivue.land/zh-cn/10-minimum-example/020-simple-h-function

@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: provide-inject
+title: "Provide/Inject"
+fromDir: "40_basic_component_system/010_lifecycle_hooks"
+toDir: "40_basic_component_system/020_provide_inject"
+docs: https://book.chibivue.land/zh-cn/40-basic-component-system/020-provide-inject

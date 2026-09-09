@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: event-modifier-2
+title: "其他修饰符"
+fromDir: "50_basic_template_compiler/027_event_modifier"
+toDir: "50_basic_template_compiler/027_event_modifier2"
+docs: https://book.chibivue.land/zh-cn/50-basic-template-compiler/027-event-modifier

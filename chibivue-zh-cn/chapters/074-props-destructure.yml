@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: props-destructure
+title: "支持 Props 解构"
+fromDir: "60_basic_sfc_compiler/040_scoped_css"
+toDir: "60_basic_sfc_compiler/050_props_destructure"
+docs: https://book.chibivue.land/zh-cn/60-basic-sfc-compiler/050-props-destructure

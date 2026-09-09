@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: define-emits
+title: "支持 defineEmits"
+fromDir: "60_basic_sfc_compiler/020_define_props"
+toDir: "60_basic_sfc_compiler/030_define_emits"
+docs: https://book.chibivue.land/zh-cn/60-basic-sfc-compiler/030-define-emits

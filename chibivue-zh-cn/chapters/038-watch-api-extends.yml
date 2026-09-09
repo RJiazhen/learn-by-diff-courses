@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: watch-api-extends
+title: "watch 的其他 API"
+fromDir: "30_basic_reactivity_system/070_watch"
+toDir: "30_basic_reactivity_system/080_watch_api_extends"
+docs: https://book.chibivue.land/zh-cn/30-basic-reactivity-system/020-computed-watch

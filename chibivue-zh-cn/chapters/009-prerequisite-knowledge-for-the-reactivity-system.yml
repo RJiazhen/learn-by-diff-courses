@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: prerequisite-knowledge-for-the-reactivity-system
+title: "响应式系统的前置知识"
+fromDir: "10_minimum_example/020_simple_h_function"
+toDir: "10_minimum_example/020_simple_h_function"
+docs: https://book.chibivue.land/zh-cn/10-minimum-example/030-prerequisite-knowledge-for-the-reactivity-system

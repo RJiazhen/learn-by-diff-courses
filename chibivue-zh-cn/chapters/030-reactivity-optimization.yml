@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: reactivity-optimization
+title: "响应式优化"
+fromDir: "20_basic_virtual_dom/060_other_props"
+toDir: "20_basic_virtual_dom/060_other_props"
+docs: https://book.chibivue.land/zh-cn/30-basic-reactivity-system/005-reactivity-optimization

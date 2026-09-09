@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: parse-sfc
+title: "解析 SFC"
+fromDir: "10_minimum_example/070_sfc_compiler"
+toDir: "10_minimum_example/070_sfc_compiler2"
+docs: https://book.chibivue.land/zh-cn/10-minimum-example/091-parse-sfc

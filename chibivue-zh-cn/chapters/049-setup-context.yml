@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
+id: setup-context
+title: "setupContext"
+fromDir: "40_basic_component_system/030_component_proxy"
+toDir: "40_basic_component_system/040_setup_context"
+docs: https://book.chibivue.land/zh-cn/40-basic-component-system/030-component-proxy-setup-context
