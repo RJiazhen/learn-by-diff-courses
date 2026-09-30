@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Ensures courses.jsonc lists every course.jsonc home in this repo.
+# Missing courses are appended, then staged so the same commit includes them.
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+if ! command -v node >/dev/null 2>&1; then
+  echo "pre-commit: node is required to sync courses.jsonc" >&2
+  exit 1
+fi
+
+node "$ROOT/scripts/sync-course-list.mjs" "$ROOT"
+git add -- "$ROOT/courses.jsonc"
