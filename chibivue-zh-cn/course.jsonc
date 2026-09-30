@@ -3,7 +3,7 @@
   "id": "chibivue-zh-cn",
   "title": "chibivue 中文课程",
   "source": {
-    "repository": "..",
+    "repository": "https://github.com/chibivue-land/chibivue",
     "root": "book/impls"
   }
 }
