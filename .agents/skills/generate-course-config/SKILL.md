@@ -1,144 +1,186 @@
 ---
 name: generate-course-config
 description: >-
-  Generates Learning Course Protocol (.course-config) YAML from a source tree of
-  chapter snapshot directories. Use when creating course.yml / chapters/*.yml,
+  Generates Learning Course Protocol (.course-config) JSONC from a source tree of
+  chapter snapshot directories. Use when creating course.jsonc / chapters/*.jsonc,
   scaffolding a LearnByDiff course, or when the user asks to generate LCP config
   from existing start/hello/step folders.
 ---
 
 # Generate course config
 
-Creates `.course-config/course.yml` and `.course-config/chapters/*.yml` for LearnByDiff.
+Creates `.course-config/course.jsonc` and `.course-config/chapters/*.jsonc` for LearnByDiff.
 
 ## Inputs (optional)
 
 User may pass any of:
 
-| Input               | Meaning                                                                                                 |
-| ------------------- | ------------------------------------------------------------------------------------------------------- |
-| Source root         | Directory that contains snapshot folders (default: current workspace / git root)                        |
-| Snapshot dirs       | Explicit ordered list, e.g. `start,hello,world` or `intro/start,intro/hello`                            |
-| Course output       | Where to write `.course-config` (default: cwd, or ask if cwd is clearly the source-only tree)           |
-| `source.repository` | Git URL or relative path written into `course.yml` (default: `.` or relative path from course → source) |
+| Input               | Meaning                                                                                                                                                         |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Source root         | Directory that contains snapshot folders (default: current workspace / git root)                                                                                |
+| Snapshot dirs       | Chapter `fromDir` / `toDir` pairs. Need **not** be consecutive (e.g. `start` → `hello`, then `start` → `world`).                                                |
+| File walk depth     | `--depth N` for `detect-chapter-dirs.mjs` (default 6). Raise for deep snapshot trees.                                                                           |
+| Course output       | `--out DIR` for the detector (default `./.course-config`). Also where you write `course.jsonc` and basic `chapters/*.jsonc`.                                    |
+| `source.repository` | Git URL or relative path written into `course.jsonc` (default: omit / `.` = directory that contains `course.jsonc`; relative paths resolve from that directory) |
 
 ## Workflow
 
 Copy and track:
 
 ```
-- [ ] Resolve source root + snapshot dirs (user args or detect)
-- [ ] Confirm chapter sequence with the user when detection is ambiguous
-- [ ] Write course.yml + chapters/*.yml
+- [ ] Resolve source root + chapter fromDir/toDir (user args or exploration)
+- [ ] Confirm pairs with the user when ambiguous (need not be consecutive snapshots)
+- [ ] Write course.jsonc + basic chapters/*.jsonc (fromDir/toDir; no changedFiles yet)
+- [ ] Run detector to fill changedFiles
+- [ ] If stdout `ok` is false, read `detect-chapter-dirs.result.json` (failures only)
+- [ ] Delete `detect-chapter-dirs.result.json` if it exists
 - [ ] Reminder: validate with protocol package / schema.json
 ```
 
-### 1. Resolve snapshots
+### 1. Write basic chapter JSONC, then fill `changedFiles`
 
-**If the user listed directories** (comma-separated or bullets): use that order as snapshot sequence. Need ≥ 2 dirs.
+You invent the chapter sequence. Snapshots are **not** required to be end-to-end (`start` → `hello` then `hello` → `world`). A later chapter may jump back to an earlier snapshot.
 
-**If not specified**, detect chapter-like snapshot folders under the source root:
+Write `.course-config/chapters/001-<id>.jsonc` (and the rest) with at least `fromDir` / `toDir`. Then run this skill’s `scripts/detect-chapter-dirs.mjs` so it **upserts `changedFiles` only**. Do not paste U/M/D lists into the chat.
 
-1. **Prefer the agent’s built-in project tools** whenever the runtime provides them (e.g. Cursor `Glob` / directory listing / `Shell` `ls`, or equivalent file-tree APIs). Use them to:
-   - List immediate children and one nested level (e.g. `examples/*/`, `tutorials/*/`)
-   - Spot sibling dirs named like chapters: `start`, `baseline`, `init`, `step-N`, `chapter-N`, `001-*`, short lesson tokens (`hello`, `world`, …)
-   - Skip noise: `node_modules`, `.git`, `apps`, `packages`, `src`, `dist`, …
-   - Order candidates: `start`-like first; then prefer growing tree size / content; confirm with the user if several orders look equally plausible
-2. **Fallback only** if those tools are unavailable or you need a packaged heuristic: run the detector script from this skill directory:
+If there is **no runtime** for that file (no Node, skill folder missing the script, sandbox cannot execute it), **implement the same script yourself** in the workspace (same flags, fill `changedFiles` on existing JSONC, result file, continue-on-chapter-error).
+
+From this monorepo:
 
 ```bash
-node skills/generate-course-config/scripts/detect-chapter-dirs.mjs [sourceRoot]
-# or after install, from the skill folder:
-node scripts/detect-chapter-dirs.mjs [sourceRoot]
+node skills/generate-course-config/scripts/detect-chapter-dirs.mjs --out /path/to/.course-config [sourceRoot]
 ```
 
-Forced dirs (script or user args):
+After install (cwd = skill folder):
 
 ```bash
-node scripts/detect-chapter-dirs.mjs --dirs start,hello,world [sourceRoot]
+node scripts/detect-chapter-dirs.mjs --out /path/to/.course-config [sourceRoot]
 ```
 
-Script JSON stdout (when used):
+Default `--out` is `./.course-config` under cwd. Existing chapter files keep extra keys (`docs`, `title`, …); only `changedFiles` is replaced. A failure analyzing or writing **one chapter does not stop the rest**. There is no `--dirs` flag.
 
-- `ok: true` → use `snapshots` / `chapters` / `courseId`
-- `ok: false` → treat like a failed built-in detection
+```bash
+node scripts/detect-chapter-dirs.mjs --out .course-config --depth 8 [sourceRoot]
+```
 
-**If detection fails** (built-in or script): **stop**. Do not invent directories. Ask the user for concrete snapshot dirs (and optional source root).
+| Flag        | Meaning                                                                                                                                                                                                   |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--out DIR` | Course config directory (`DIR/chapters/*.jsonc` must already exist). On failure also writes `DIR/detect-chapter-dirs.result.json`. Default: `./.course-config`. `--out=DIR` is also accepted.             |
+| `--depth N` | Subdirectory levels to enter under each snapshot (default **6**; files at that depth still count). Raise it for deep trees (e.g. `examples/playground/src/components/...`). `--depth=N` is also accepted. |
+| `--json`    | Print the full fill result to stdout **instead of** writing JSONC / the result file. Do not use this in agent chats (large).                                                                              |
+| positional  | Source root (default: cwd)                                                                                                                                                                                |
 
-Nested parents like `tutorials/*` or `examples/demo-source/*` are valid; chapters need not share one parent.
+Stdout is a **short** execution result only: `{ ok, wrote, failed }` plus `result` (absolute path) **when something failed**.
+
+#### `detect-chapter-dirs.result.json` (failures only)
+
+Written **only when the run had errors**. It is a JSON **array of failures** — no successful chapters, no U/M/D lists. Read the whole file; do not grep.
+
+Chapter failure:
+
+```json
+[
+  {
+    "id": "broken",
+    "fromDir": "skeleton",
+    "toDir": "missing",
+    "error": "snapshot not found: missing"
+  }
+]
+```
+
+Fatal (no snapshots / bad root) — one object with `error` only:
+
+```json
+[{ "error": "no chapter JSONC in chapters/; write basic chapter files (fromDir/toDir) first" }]
+```
+
+- `stdout.ok === true` → no result file. Continue.
+- `stdout.ok === false` → Read `stdout.result`. Keep JSONC that was written. Ask the user only about those failed `id`s (or the fatal `error`). Do not invent snapshot dirs.
+
+**Always delete** this file when the skill finishes. Do not commit it.
+
+Nested snapshot paths (`tutorials/hello`, `book/impls/start`) are valid. Chapters need not share one parent.
 
 ### 2. Map snapshots → chapters
 
-For ordered snapshots `D0, D1, … Dn` create **n** chapters:
+Each chapter is its own `fromDir` → `toDir` pair (omit either for an empty snapshot). Consecutive snapshots are allowed but **not required**.
 
-- Chapter `k`: `fromDir: Dk-1`, `toDir: Dk` (omit either for an empty snapshot)
-- Prefer detector / exploration results for `id`, `title`, optional `entryFiles`
+- Prefer exploration / the user for `id`, `title`, optional `entryFiles`
+- **Always fill `changedFiles`** via the detector script (`path` + `U` / `M` / `D`, or `[]`). Do not recompute diffs in the chat.
 - Omit `entryFiles` unless you need a subset; runtime auto-discovers all files under `toDir`
 - Do **not** write a `tests` field (not in the protocol yet)
 
-Chapters need **not** share one parent; nested paths are valid (`advanced/start`).
-
 ### 3. Write files
 
-Layout:
+Layout (you write `course.jsonc` and basic `chapters/*.jsonc`; the detector fills `changedFiles`):
 
 ```text
 .course-config/
-  course.yml
+  course.jsonc
   chapters/
-    001-<id>.yml
-    002-<id>.yml
+    001-<id>.jsonc
+    002-<id>.jsonc
     …
 ```
 
-`course.yml` template (all fields optional; omit what defaults cover):
+`course.jsonc` template (all fields optional; omit what defaults cover):
 
-```yaml
-# yaml-language-server: $schema=<relative-path-to>/packages/protocol/schema.json#/$defs/course
-# id / title default from the `.course-config` parent folder (or `{repo}-learn` at a git root)
-source:
-  repository: <url-or-relative-path> # default: .
-  # root: <optional prefix under repository>
-# chaptersDir: chapters   # optional; default is `chapters` next to this file
+```jsonc
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/course",
+  // id / title default from the `.course-config` parent folder (or `{repo}-learn` at a git root)
+  "source": {
+    "repository": "<url-or-relative-path>", // omit or `.` = directory that contains this file
+    // "root": "<optional prefix under repository>"
+  },
+  // "chaptersDir": "chapters" // optional; default is `chapters` next to this file
+}
 ```
 
-Only set `source.repository` when it is not the course home (`.`). Do not emit `protocolVersion` or `workspace`.
+`source.repository` is a git URL, a local path, or omitted. Relative local paths resolve from the directory that contains `course.jsonc` (for this skill: `.course-config/`). Do not glue a subdirectory onto a git URL — use `source.root` instead.
+
+When `.course-config` sits **inside** the source tree, write `repository: ..` (parent of the config dir). When course output and source are different directories, write the posix relative path from `.course-config` to the source root (e.g. `../../demo-source`). Omit `source.repository` only when snapshots live in the same directory as `course.jsonc`. Do not emit `protocolVersion` or `workspace`.
 
 Minimal chapter file (defaults fill the rest):
 
-```yaml
-# yaml-language-server: $schema=<relative-path-to>/packages/protocol/schema.json#/$defs/chapter
-fromDir: <fromDir>
-toDir: <toDir>
+```jsonc
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "fromDir": "<fromDir>",
+  "toDir": "<toDir>",
+}
 ```
 
 Or with explicit fields:
 
-```yaml
-# yaml-language-server: $schema=<relative-path-to>/packages/protocol/schema.json#/$defs/chapter
-id: <id>
-title: <title>
-fromDir: <fromDir>
-toDir: <toDir>
-# entryFiles:   # optional; omit to auto-discover
-#   - src/index.ts
-# docs: README.md   # optional http(s) URL or path under toDir/fromDir
+```jsonc
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "<id>",
+  "title": "<title>",
+  "fromDir": "<fromDir>",
+  "toDir": "<toDir>",
+  "changedFiles": [{ "path": "src/index.ts", "kind": "M" }],
+  // "entryFiles": ["src/index.ts"], // optional; omit to auto-discover
+  // "docs": "README.md" // optional http(s) URL or path under toDir/fromDir
+}
 ```
 
-Number chapter filenames `001-`, `002-`, … (sort order = course order). Empty `fromDir` / `toDir` are allowed (empty trees).
+Always include `changedFiles` after the detector runs (the script writes `[]` when the chapter did not change). Number chapter filenames `001-`, `002-`, … (sort order = course order). Empty `fromDir` / `toDir` are allowed (empty trees).
 
-Do **not** overwrite existing `.course-config` without asking.
+Ask before replacing an existing `course.jsonc`. The detector only upserts `changedFiles` on existing chapter files.
 
 ### 4. Done
 
 Summarize generated chapters (`fromDir` → `toDir`). Then give the author a way to **try the course immediately**:
 
-1. Print the **absolute path** of `course.yml` (for example `.course-config/course.yml`). They can paste it into **Open Course**.
+1. Print the **absolute path** of `course.jsonc` (for example `.course-config/course.jsonc`). They can paste it into **Open Course**.
 2. Print clickable local deep links (URL-encode the same absolute file path, or a `file:` URL, as `url=`):
 
 ```text
-vscode://RuanJiazhen.learn-by-diff/open?url=<urlencoded-absolute-course.yml>
-cursor://RuanJiazhen.learn-by-diff/open?url=<urlencoded-absolute-course.yml>
+vscode://RuanJiazhen.learn-by-diff/open?url=<urlencoded-absolute-course.jsonc>
+cursor://RuanJiazhen.learn-by-diff/open?url=<urlencoded-absolute-course.jsonc>
 ```
 
 Also point authors at:
@@ -148,11 +190,15 @@ Also point authors at:
 
 ## Hard rules
 
-- Prefer built-in project/directory tools over `scripts/detect-chapter-dirs.mjs` when the agent runtime provides them.
+- Write basic `chapters/*.jsonc` (`fromDir` / `toDir`) first, then run `scripts/detect-chapter-dirs.mjs --out` to fill `changedFiles`. Stdout is `{ok,wrote,failed}` plus `result` only on failure. If there is no runtime for the script, implement that same filler locally, then run it. Never dump U/M/D JSON into the chat.
+- Do not pass `--dirs`. Chapter snapshots need not be consecutive.
+- If stdout `ok` is false, Read `detect-chapter-dirs.result.json` (failures only — no grep). One chapter failure is not a reason to drop the others.
+- Delete `detect-chapter-dirs.result.json` when the skill finishes. Do not commit it.
+- Raise `--depth` when snapshots nest deeper than the default of 6.
 - Never fabricate snapshot directories when detection fails — ask the user.
 - One `source.repository` only (no per-chapter remotes).
 - `fromDir` / `toDir` must be repo-relative (no `..`, no absolute paths).
-- Keep generated YAML compatible with `schema.json` (additive optional fields only).
+- Keep generated JSONC compatible with `schema.json` (additive optional fields only).
 
 ## Reference
 
