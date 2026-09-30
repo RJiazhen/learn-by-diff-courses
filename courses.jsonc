@@ -1,0 +1,13 @@
+/**
+ * Catalog of Learn by Diff courses in this repository.
+ * Pre-commit appends any course directory (containing course.jsonc) that is missing.
+ */
+{
+  "courses": [
+    {
+      "id": "chibivue-zh-cn",
+      "title": "chibivue 中文课程",
+      "path": "chibivue-zh-cn"
+    }
+  ]
+}
