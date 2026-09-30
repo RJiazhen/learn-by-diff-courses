@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "project-setup",
+  "title": "本书的方法和环境设置",
+  "fromDir": "",
+  "toDir": "00_introduction/010_project_setup",
+  "docs": "https://book.chibivue.land/zh-cn/00-introduction/040-setup-project",
+  "changedFiles": [
+    {
+      "path": "examples/playground/index.html",
+      "kind": "U"
+    },
+    {
+      "path": "examples/playground/package.json",
+      "kind": "U"
+    },
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "U"
+    },
+    {
+      "path": "examples/playground/tsconfig.json",
+      "kind": "U"
+    },
+    {
+      "path": "examples/playground/vite.config.ts",
+      "kind": "U"
+    },
+    {
+      "path": "package.json",
+      "kind": "U"
+    },
+    {
+      "path": "packages/index.ts",
+      "kind": "U"
+    },
+    {
+      "path": "tsconfig.json",
+      "kind": "U"
+    }
+  ]
+}

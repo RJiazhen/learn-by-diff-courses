@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: create-app-api
-title: "第一次渲染和 createApp API"
-fromDir: "00_introduction/010_project_setup"
-toDir: "10_minimum_example/010_create_app"
-docs: https://book.chibivue.land/zh-cn/10-minimum-example/010-create-app-api

@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: comment
-title: "支持注释节点"
-fromDir: "50_basic_template_compiler/030_fragment"
-toDir: "50_basic_template_compiler/035_comment"
-docs: https://book.chibivue.land/zh-cn/50-basic-template-compiler/035-comment

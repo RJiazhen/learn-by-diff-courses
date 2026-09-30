@@ -1,0 +1,74 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "event-modifier",
+  "title": "withModifiers",
+  "fromDir": "50_basic_template_compiler/025_v_on",
+  "toDir": "50_basic_template_compiler/027_event_modifier",
+  "docs": "https://book.chibivue.land/zh-cn/50-basic-template-compiler/027-event-modifier",
+  "changedFiles": [
+    {
+      "path": "examples/playground/package.json",
+      "kind": "D"
+    },
+    {
+      "path": "examples/playground/pnpm-lock.yaml",
+      "kind": "U"
+    },
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/ast.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/codegen.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/compile.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/parse.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/runtimeHelpers.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transform.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transforms/vOn.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-dom/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-dom/transforms/vOn.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-dom/directives/vOn.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-dom/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-dom/runtimeHelpers.ts",
+      "kind": "U"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

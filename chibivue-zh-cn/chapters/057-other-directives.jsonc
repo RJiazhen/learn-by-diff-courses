@@ -1,0 +1,66 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "other-directives",
+  "title": "其他指令",
+  "fromDir": "50_basic_template_compiler/085_component_slot_insert",
+  "toDir": "50_basic_template_compiler/090_other_directives",
+  "docs": "https://book.chibivue.land/zh-cn/50-basic-template-compiler/090-other-directives",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/App.vue",
+      "kind": "M"
+    },
+    {
+      "path": "examples/playground/src/Comp.vue",
+      "kind": "D"
+    },
+    {
+      "path": "packages/compiler-core/ast.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/parse.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/runtimeHelpers.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transforms/transformElement.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transforms/vSlot.ts",
+      "kind": "D"
+    },
+    {
+      "path": "packages/compiler-core/utils.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-dom/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-dom/transforms/vHtml.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/compiler-dom/transforms/vText.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/componentRenderContext.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "other-props",
+  "title": "未处理 Props 的补丁",
+  "fromDir": "20_basic_virtual_dom/050_next_tick",
+  "toDir": "20_basic_virtual_dom/060_other_props",
+  "docs": "https://book.chibivue.land/zh-cn/20-basic-virtual-dom/040-patch-other-attrs",
+  "changedFiles": [
+    {
+      "path": "packages/runtime-core/renderer.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/vnode.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-dom/modules/class.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-dom/modules/props.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-dom/modules/style.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-dom/patchProp.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/shared/general.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

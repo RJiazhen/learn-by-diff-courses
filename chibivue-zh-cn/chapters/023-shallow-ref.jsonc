@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "shallow-ref",
+  "title": "shallowRef",
+  "fromDir": "30_basic_reactivity_system/010_ref",
+  "toDir": "30_basic_reactivity_system/020_shallow_ref",
+  "docs": "https://book.chibivue.land/zh-cn/30-basic-reactivity-system/010-ref-api",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/App.vue",
+      "kind": "M"
+    },
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/@extensions/vite-plugin-chibivue/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/reactivity/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/reactivity/ref.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/renderer.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: scoped-css
-title: "支持作用域 CSS"
-fromDir: "60_basic_sfc_compiler/030_define_emits"
-toDir: "60_basic_sfc_compiler/040_scoped_css"
-docs: https://book.chibivue.land/zh-cn/60-basic-sfc-compiler/040-scoped-css

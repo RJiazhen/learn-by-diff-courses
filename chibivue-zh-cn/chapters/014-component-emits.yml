@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: component-emits
-title: "组件 Emit"
-fromDir: "10_minimum_example/050_component_system2"
-toDir: "10_minimum_example/050_component_system3"
-docs: https://book.chibivue.land/zh-cn/10-minimum-example/052-component-emits

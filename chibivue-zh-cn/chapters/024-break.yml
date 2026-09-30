@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: break
-title: "稍作休息"
-fromDir: "10_minimum_example/070_sfc_compiler4"
-toDir: "10_minimum_example/070_sfc_compiler4"
-docs: https://book.chibivue.land/zh-cn/10-minimum-example/100-break

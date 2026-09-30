@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: lifecycle-hooks
-title: "生命周期钩子"
-fromDir: "30_basic_reactivity_system/150_other_apis"
-toDir: "40_basic_component_system/010_lifecycle_hooks"
-docs: https://book.chibivue.land/zh-cn/40-basic-component-system/010-lifecycle-hooks

@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: static-hoisting
-title: "静态提升"
-fromDir: "90_web_application_essentials/030_transition"
-toDir: "90_web_application_essentials/040_static_hoisting"
-docs: https://book.chibivue.land/zh-cn/90-web-application-essentials/040-optimizations/010-static-hoisting

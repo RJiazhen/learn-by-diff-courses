@@ -1,0 +1,66 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "v-bind",
+  "title": "实现指令（v-bind）",
+  "fromDir": "50_basic_template_compiler/010_transformer",
+  "toDir": "50_basic_template_compiler/020_v_bind",
+  "docs": "https://book.chibivue.land/zh-cn/50-basic-template-compiler/020-v-bind",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/ast.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/codegen.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/compile.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/parse.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transform.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transforms/transformElement.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transforms/vBind.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/compiler-core/utils.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/vnode.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/shared/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/shared/normalizeProp.ts",
+      "kind": "U"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "slot-extend",
+  "title": "命名插槽与作用域插槽",
+  "fromDir": "40_basic_component_system/050_component_slot",
+  "toDir": "40_basic_component_system/060_slot_extend",
+  "docs": "https://book.chibivue.land/zh-cn/40-basic-component-system/040-component-slot",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/componentRenderContext.ts",
+      "kind": "D"
+    },
+    {
+      "path": "packages/runtime-core/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/renderer.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/vnode.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

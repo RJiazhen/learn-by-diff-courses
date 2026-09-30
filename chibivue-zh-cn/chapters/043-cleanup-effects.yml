@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: cleanup-effects
-title: "Effect 清理"
-fromDir: "30_basic_reactivity_system/120_proxy_handler_improvement"
-toDir: "30_basic_reactivity_system/130_cleanup_effects"
-docs: https://book.chibivue.land/zh-cn/30-basic-reactivity-system/040-effect-scope

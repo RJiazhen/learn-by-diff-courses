@@ -1,0 +1,58 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "keep-alive",
+  "title": "KeepAlive",
+  "fromDir": "90_web_application_essentials/010_ssr",
+  "toDir": "90_web_application_essentials/020_keep_alive",
+  "docs": "https://book.chibivue.land/zh-cn/90-web-application-essentials/030-builtins/010-keep-alive",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/App.vue",
+      "kind": "M"
+    },
+    {
+      "path": "examples/playground/src/Counter.vue",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/apiLifecycle.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/component.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/components/KeepAlive.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/hydration.ts",
+      "kind": "D"
+    },
+    {
+      "path": "packages/runtime-core/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/renderer.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/vnode.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-dom/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/shared/shapeFlags.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

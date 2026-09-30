@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "transformer",
+  "title": "重构 Transformer 的 Codegen 实现",
+  "fromDir": "40_basic_component_system/070_options_api",
+  "toDir": "50_basic_template_compiler/010_transformer",
+  "docs": "https://book.chibivue.land/zh-cn/50-basic-template-compiler/010-transform",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/ast.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/codegen.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/compile.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/options.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/parse.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transform.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/compiler-core/transforms/transformElement.ts",
+      "kind": "U"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

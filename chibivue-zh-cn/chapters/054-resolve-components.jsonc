@@ -1,0 +1,102 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "resolve-components",
+  "title": "解析组件",
+  "fromDir": "50_basic_template_compiler/050_v_for",
+  "toDir": "50_basic_template_compiler/060_resolve_components",
+  "docs": "https://book.chibivue.land/zh-cn/50-basic-template-compiler/070-resolve-component",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/App.vue",
+      "kind": "M"
+    },
+    {
+      "path": "examples/playground/src/components/Counter.vue",
+      "kind": "U"
+    },
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "examples/playground/vite.config.js",
+      "kind": "D"
+    },
+    {
+      "path": "examples/playground/vite.config.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/compiler-core/ast.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/codegen.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/options.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/parse.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/runtimeHelpers.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transform.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transforms/transformElement.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/utils.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-dom/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-dom/parserOptions.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/apiCreateApp.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/componentOptions.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/componentRenderContext.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/helpers/resolveAssets.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/renderer.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/shared/domTagConfig.ts",
+      "kind": "U"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

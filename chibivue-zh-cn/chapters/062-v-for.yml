@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: v-for
-title: "支持 v-for"
-fromDir: "50_basic_template_compiler/040_v_if_and_structural_directive"
-toDir: "50_basic_template_compiler/050_v_for"
-docs: https://book.chibivue.land/zh-cn/50-basic-template-compiler/050-v-for

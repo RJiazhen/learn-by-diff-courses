@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: v-on
-title: "支持 v-on"
-fromDir: "50_basic_template_compiler/022_transform_expression"
-toDir: "50_basic_template_compiler/025_v_on"
-docs: https://book.chibivue.land/zh-cn/50-basic-template-compiler/025-v-on

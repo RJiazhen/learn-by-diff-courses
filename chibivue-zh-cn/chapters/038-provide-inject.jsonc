@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "provide-inject",
+  "title": "Provide/Inject",
+  "fromDir": "40_basic_component_system/010_lifecycle_hooks",
+  "toDir": "40_basic_component_system/020_provide_inject",
+  "docs": "https://book.chibivue.land/zh-cn/40-basic-component-system/020-provide-inject",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/apiCreateApp.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/apiInject.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/component.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/componentOptions.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/renderer.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/vnode.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

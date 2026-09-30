@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: compiler-ssr
-title: "Compiler SSR"
-fromDir: "90_web_application_essentials/010_ssr"
-toDir: "90_web_application_essentials/010_ssr"
-docs: https://book.chibivue.land/zh-cn/90-web-application-essentials/020-ssr/030-compiler-ssr

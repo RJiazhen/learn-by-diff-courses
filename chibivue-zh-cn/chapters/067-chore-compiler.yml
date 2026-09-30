@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: chore-compiler
-title: "编译器细节优化"
-fromDir: "50_basic_template_compiler/090_other_directives"
-toDir: "50_basic_template_compiler/100_chore_compiler"
-docs: https://book.chibivue.land/zh-cn/50-basic-template-compiler/100-chore-compiler

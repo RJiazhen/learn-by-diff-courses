@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "event-modifier2",
+  "title": "其他事件修饰符",
+  "fromDir": "50_basic_template_compiler/027_event_modifier",
+  "toDir": "50_basic_template_compiler/027_event_modifier2",
+  "docs": "https://book.chibivue.land/zh-cn/50-basic-template-compiler/027-event-modifier",
+  "changedFiles": [
+    {
+      "path": "examples/playground/package.json",
+      "kind": "U"
+    },
+    {
+      "path": "examples/playground/pnpm-lock.yaml",
+      "kind": "D"
+    },
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-dom/transforms/vOn.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-dom/directives/vOn.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-dom/runtimeHelpers.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/shared/general.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "package-architecture",
+  "title": "包架构",
+  "fromDir": "10_minimum_example/010_create_app",
+  "toDir": "10_minimum_example/015_package_architecture",
+  "docs": "https://book.chibivue.land/zh-cn/10-minimum-example/015-package-architecture",
+  "changedFiles": [
+    {
+      "path": "examples/playground/vite.config.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/apiCreateApp.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/component.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/componentOptions.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/index.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/renderer.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-dom/index.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-dom/nodeOps.ts",
+      "kind": "U"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

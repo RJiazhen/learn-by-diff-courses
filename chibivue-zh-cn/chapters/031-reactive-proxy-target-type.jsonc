@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "reactive-proxy-target-type",
+  "title": "不应该是响应式的对象",
+  "fromDir": "30_basic_reactivity_system/090_watch_effect",
+  "toDir": "30_basic_reactivity_system/100_reactive_proxy_target_type",
+  "docs": "https://book.chibivue.land/zh-cn/30-basic-reactivity-system/030-reactive-proxy-handlers",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/App.vue",
+      "kind": "M"
+    },
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/reactivity/reactive.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/shared/general.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

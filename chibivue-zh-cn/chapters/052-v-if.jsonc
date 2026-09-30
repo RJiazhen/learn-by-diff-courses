@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "v-if",
+  "title": "v-if 和结构指令",
+  "fromDir": "50_basic_template_compiler/035_comment",
+  "toDir": "50_basic_template_compiler/040_v_if_and_structural_directive",
+  "docs": "https://book.chibivue.land/zh-cn/50-basic-template-compiler/040-v-if-and-structural-directive",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "examples/playground/vite.config.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/ast.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/codegen.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/compile.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transform.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transforms/vIf.ts",
+      "kind": "U"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

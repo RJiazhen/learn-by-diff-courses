@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: transition
-title: "Transition"
-fromDir: "90_web_application_essentials/020_keep_alive"
-toDir: "90_web_application_essentials/030_transition"
-docs: https://book.chibivue.land/zh-cn/90-web-application-essentials/030-builtins/030-transition

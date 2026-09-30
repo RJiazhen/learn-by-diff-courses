@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: minimum-virtual-dom
-title: "最小虚拟 DOM"
-fromDir: "10_minimum_example/030_reactive_system"
-toDir: "10_minimum_example/040_vdom_system"
-docs: https://book.chibivue.land/zh-cn/10-minimum-example/040-minimum-virtual-dom

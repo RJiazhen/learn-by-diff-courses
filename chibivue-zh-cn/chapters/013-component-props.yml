@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: component-props
-title: "组件 Props"
-fromDir: "10_minimum_example/050_component_system"
-toDir: "10_minimum_example/050_component_system2"
-docs: https://book.chibivue.land/zh-cn/10-minimum-example/051-component-props

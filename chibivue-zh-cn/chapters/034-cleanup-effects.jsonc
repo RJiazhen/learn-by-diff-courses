@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "cleanup-effects",
+  "title": "ReactiveEffect 的清理",
+  "fromDir": "30_basic_reactivity_system/120_proxy_handler_improvement",
+  "toDir": "30_basic_reactivity_system/130_cleanup_effects",
+  "docs": "https://book.chibivue.land/zh-cn/30-basic-reactivity-system/040-effect-scope",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/App.vue",
+      "kind": "D"
+    },
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/reactivity/effect.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/apiWatch.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

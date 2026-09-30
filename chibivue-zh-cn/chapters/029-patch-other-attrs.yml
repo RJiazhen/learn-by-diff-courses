@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: patch-other-attrs
-title: "未处理 Props 的补丁"
-fromDir: "20_basic_virtual_dom/050_next_tick"
-toDir: "20_basic_virtual_dom/060_other_props"
-docs: https://book.chibivue.land/zh-cn/20-basic-virtual-dom/040-patch-other-attrs

@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: to-ref
-title: "toRef"
-fromDir: "30_basic_reactivity_system/020_shallow_ref"
-toDir: "30_basic_reactivity_system/030_to_ref"
-docs: https://book.chibivue.land/zh-cn/30-basic-reactivity-system/010-ref-api

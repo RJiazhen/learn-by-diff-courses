@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: setup-project
-title: "本书的方法和环境设置"
-fromDir: ""
-toDir: "00_introduction/010_project_setup"
-docs: https://book.chibivue.land/zh-cn/00-introduction/040-setup-project

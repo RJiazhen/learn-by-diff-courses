@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "ref",
+  "title": "ref API",
+  "fromDir": "20_basic_virtual_dom/060_other_props",
+  "toDir": "30_basic_reactivity_system/010_ref",
+  "docs": "https://book.chibivue.land/zh-cn/30-basic-reactivity-system/010-ref-api",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/App.vue",
+      "kind": "U"
+    },
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/@extensions/vite-plugin-chibivue/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/reactivity/effect.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/reactivity/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/reactivity/reactive.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/reactivity/ref.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/renderer.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

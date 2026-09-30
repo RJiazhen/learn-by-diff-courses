@@ -1,0 +1,70 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "component-slot-outlet",
+  "title": "支持插槽（定义）",
+  "fromDir": "50_basic_template_compiler/060_resolve_components",
+  "toDir": "50_basic_template_compiler/080_component_slot_outlet",
+  "docs": "https://book.chibivue.land/zh-cn/50-basic-template-compiler/080-component-slot-outlet",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/App.vue",
+      "kind": "M"
+    },
+    {
+      "path": "examples/playground/src/Comp.vue",
+      "kind": "U"
+    },
+    {
+      "path": "examples/playground/src/components/Counter.vue",
+      "kind": "D"
+    },
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/ast.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/compile.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/parse.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/runtimeHelpers.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transforms/transformElement.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transforms/transformSlotOutlet.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/compiler-core/utils.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/componentPublicInstance.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/helpers/renderSlot.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

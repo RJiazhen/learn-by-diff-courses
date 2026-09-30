@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: script-setup
-title: "支持 script setup"
-fromDir: "50_basic_template_compiler/100_chore_compiler"
-toDir: "60_basic_sfc_compiler/010_script_setup"
-docs: https://book.chibivue.land/zh-cn/60-basic-sfc-compiler/010-script-setup

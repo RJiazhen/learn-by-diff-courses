@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "vdom-system",
+  "title": "最小虚拟 DOM",
+  "fromDir": "10_minimum_example/030_reactive_system",
+  "toDir": "10_minimum_example/040_vdom_system",
+  "docs": "https://book.chibivue.land/zh-cn/10-minimum-example/040-minimum-virtual-dom",
+  "changedFiles": [
+    {
+      "path": "packages/runtime-core/apiCreateApp.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/h.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/renderer.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/vnode.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-dom/nodeOps.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

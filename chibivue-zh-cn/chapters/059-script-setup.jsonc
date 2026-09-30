@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "script-setup",
+  "title": "支持 script setup",
+  "fromDir": "50_basic_template_compiler/100_chore_compiler",
+  "toDir": "60_basic_sfc_compiler/010_script_setup",
+  "docs": "https://book.chibivue.land/zh-cn/60-basic-sfc-compiler/010-script-setup",
+  "changedFiles": [
+    {
+      "path": "packages/compiler-core/parse.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-sfc/compileScript.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/compiler-sfc/compileSfc.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/compiler-sfc/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-sfc/parse.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

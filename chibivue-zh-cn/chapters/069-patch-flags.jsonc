@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "patch-flags",
+  "title": "补丁标志",
+  "fromDir": "90_web_application_essentials/040_static_hoisting",
+  "toDir": "90_web_application_essentials/050_patch_flags",
+  "docs": "https://book.chibivue.land/zh-cn/90-web-application-essentials/040-optimizations/020-patch-flags",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/App.vue",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/ast.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/codegen.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/vnode.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/shared/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/shared/patchFlags.ts",
+      "kind": "U"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

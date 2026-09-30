@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/course
-id: chibivue-zh-cn
-title: "chibivue：从一行 Hello, World 开始，逐步构建"
-source:
-  repository: https://github.com/chibivue-land/chibivue
-  root: book/impls

@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: about
-title: "入门指南"
-fromDir: ""
-toDir: ""
-docs: https://book.chibivue.land/zh-cn/00-introduction/010-about

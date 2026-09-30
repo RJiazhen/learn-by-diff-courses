@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "simple-h-function",
+  "title": "让我们启用 HTML 元素渲染",
+  "fromDir": "10_minimum_example/015_package_architecture",
+  "toDir": "10_minimum_example/020_simple_h_function",
+  "docs": "https://book.chibivue.land/zh-cn/10-minimum-example/020-simple-h-function",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/apiCreateApp.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/h.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/renderer.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/vnode.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-dom/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-dom/modules/attrs.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-dom/modules/events.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-dom/nodeOps.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-dom/patchProp.ts",
+      "kind": "U"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

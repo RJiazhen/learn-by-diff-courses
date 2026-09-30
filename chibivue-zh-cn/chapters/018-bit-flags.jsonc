@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "bit-flags",
+  "title": "VNode 的位级表示",
+  "fromDir": "20_basic_virtual_dom/010_patch_keyed_children",
+  "toDir": "20_basic_virtual_dom/020_bit_flags",
+  "docs": "https://book.chibivue.land/zh-cn/20-basic-virtual-dom/020-bit-flags",
+  "changedFiles": [
+    {
+      "path": "packages/reactivity/baseHandler.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/renderer.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/vnode.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/shared/general.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/shared/shapeFlags.ts",
+      "kind": "U"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

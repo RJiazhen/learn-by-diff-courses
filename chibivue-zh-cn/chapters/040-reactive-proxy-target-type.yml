@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: reactive-proxy-target-type
-title: "在生成响应式代理之前确定对象"
-fromDir: "30_basic_reactivity_system/090_watch_effect"
-toDir: "30_basic_reactivity_system/100_reactive_proxy_target_type"
-docs: https://book.chibivue.land/zh-cn/30-basic-reactivity-system/030-reactive-proxy-handlers

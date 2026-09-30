@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "ssr",
+  "title": "renderToString",
+  "fromDir": "60_basic_sfc_compiler/060_type_based_macros",
+  "toDir": "90_web_application_essentials/010_ssr",
+  "docs": "https://book.chibivue.land/zh-cn/90-web-application-essentials/020-ssr/010-create-ssr-app",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/App.vue",
+      "kind": "M"
+    },
+    {
+      "path": "examples/playground/src/Child.vue",
+      "kind": "D"
+    },
+    {
+      "path": "packages/compiler-core/parse.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-sfc/compileScript.ts",
+      "kind": "D"
+    },
+    {
+      "path": "packages/compiler-sfc/compileSfc.ts",
+      "kind": "D"
+    },
+    {
+      "path": "packages/compiler-sfc/compileStyle.ts",
+      "kind": "D"
+    },
+    {
+      "path": "packages/compiler-sfc/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-sfc/parse.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/apiCreateApp.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/component.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/hydration.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/vnode.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-dom/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/server-renderer/helpers/ssrInterpolate.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/server-renderer/helpers/ssrRenderAttrs.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/server-renderer/helpers/ssrRenderList.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/server-renderer/helpers/ssrUtils.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/server-renderer/index.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/server-renderer/render.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/server-renderer/renderToString.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/shared/general.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/shared/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

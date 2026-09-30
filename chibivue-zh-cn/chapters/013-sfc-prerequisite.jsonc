@@ -1,0 +1,74 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "sfc-prerequisite",
+  "title": "使用 SFC 开发（外围知识）",
+  "fromDir": "10_minimum_example/060_template_compiler3",
+  "toDir": "10_minimum_example/070_sfc_compiler",
+  "docs": "https://book.chibivue.land/zh-cn/10-minimum-example/090-prerequisite-knowledge-for-the-sfc",
+  "changedFiles": [
+    {
+      "path": "plugin-sample/README.md",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/index.html",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/package.json",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/pnpm-lock.yaml",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/public/vite.svg",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/src/App.vue",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/src/assets/vue.svg",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/src/components/HelloWorld.vue",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/src/main.ts",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/src/plugin.sample.js",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/src/style.css",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/src/vite-env.d.ts",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/tsconfig.json",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/tsconfig.node.json",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/vite.config.ts",
+      "kind": "U"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

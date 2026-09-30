@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: v-if-and-structural-directive
-title: "v-if 和结构指令"
-fromDir: "50_basic_template_compiler/035_comment"
-toDir: "50_basic_template_compiler/040_v_if_and_structural_directive"
-docs: https://book.chibivue.land/zh-cn/50-basic-template-compiler/040-v-if-and-structural-directive

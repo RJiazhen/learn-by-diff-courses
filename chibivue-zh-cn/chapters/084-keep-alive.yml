@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: keep-alive
-title: "KeepAlive"
-fromDir: "90_web_application_essentials/010_ssr"
-toDir: "90_web_application_essentials/020_keep_alive"
-docs: https://book.chibivue.land/zh-cn/90-web-application-essentials/030-builtins/010-keep-alive

@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: template-binding
-title: "数据绑定"
-fromDir: "10_minimum_example/060_template_compiler2"
-toDir: "10_minimum_example/060_template_compiler3"
-docs: https://book.chibivue.land/zh-cn/10-minimum-example/080-template-binding

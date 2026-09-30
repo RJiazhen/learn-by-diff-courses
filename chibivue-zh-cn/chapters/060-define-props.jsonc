@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "define-props",
+  "title": "支持 defineProps",
+  "fromDir": "60_basic_sfc_compiler/010_script_setup",
+  "toDir": "60_basic_sfc_compiler/020_define_props",
+  "docs": "https://book.chibivue.land/zh-cn/60-basic-sfc-compiler/020-define-props",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/App.vue",
+      "kind": "M"
+    },
+    {
+      "path": "examples/playground/src/Child.vue",
+      "kind": "U"
+    },
+    {
+      "path": "packages/compiler-sfc/compileScript.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-sfc/compileSfc.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-sfc/compileStyle.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/compiler-sfc/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-sfc/parse.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

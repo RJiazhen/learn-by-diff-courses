@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "compile-sfc-style",
+  "title": "SFC style 块",
+  "fromDir": "10_minimum_example/070_sfc_compiler3",
+  "toDir": "10_minimum_example/070_sfc_compiler4",
+  "docs": "https://book.chibivue.land/zh-cn/10-minimum-example/094-compile-sfc-style",
+  "changedFiles": [
+    {
+      "path": "examples/playground/vite.config.ts",
+      "kind": "M"
+    },
+    {
+      "path": "package.json",
+      "kind": "M"
+    },
+    {
+      "path": "packages/@extensions/vite-plugin-chibivue/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-sfc/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-sfc/rewriteDefault.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/component.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

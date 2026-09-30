@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "parse-sfc",
+  "title": "解析 SFC",
+  "fromDir": "10_minimum_example/070_sfc_compiler",
+  "toDir": "10_minimum_example/070_sfc_compiler2",
+  "docs": "https://book.chibivue.land/zh-cn/10-minimum-example/091-parse-sfc",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/App.vue",
+      "kind": "U"
+    },
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "examples/playground/vite.config.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/@extensions/vite-plugin-chibivue/index.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/compiler-core/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-dom/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-sfc/compileTemplate.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/compiler-sfc/index.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/compiler-sfc/parse.ts",
+      "kind": "U"
+    },
+    {
+      "path": "plugin-sample/README.md",
+      "kind": "D"
+    },
+    {
+      "path": "plugin-sample/index.html",
+      "kind": "D"
+    },
+    {
+      "path": "plugin-sample/package.json",
+      "kind": "D"
+    },
+    {
+      "path": "plugin-sample/pnpm-lock.yaml",
+      "kind": "D"
+    },
+    {
+      "path": "plugin-sample/public/vite.svg",
+      "kind": "D"
+    },
+    {
+      "path": "plugin-sample/src/App.vue",
+      "kind": "D"
+    },
+    {
+      "path": "plugin-sample/src/assets/vue.svg",
+      "kind": "D"
+    },
+    {
+      "path": "plugin-sample/src/components/HelloWorld.vue",
+      "kind": "D"
+    },
+    {
+      "path": "plugin-sample/src/main.ts",
+      "kind": "D"
+    },
+    {
+      "path": "plugin-sample/src/plugin.sample.js",
+      "kind": "D"
+    },
+    {
+      "path": "plugin-sample/src/style.css",
+      "kind": "D"
+    },
+    {
+      "path": "plugin-sample/src/vite-env.d.ts",
+      "kind": "D"
+    },
+    {
+      "path": "plugin-sample/tsconfig.json",
+      "kind": "D"
+    },
+    {
+      "path": "plugin-sample/tsconfig.node.json",
+      "kind": "D"
+    },
+    {
+      "path": "plugin-sample/vite.config.ts",
+      "kind": "D"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: more-complex-parser
-title: "希望编写更复杂的 HTML"
-fromDir: "10_minimum_example/060_template_compiler"
-toDir: "10_minimum_example/060_template_compiler2"
-docs: https://book.chibivue.land/zh-cn/10-minimum-example/070-more-complex-parser

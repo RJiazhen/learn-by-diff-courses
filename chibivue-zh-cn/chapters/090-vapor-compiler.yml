@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/RJiazhen/learn-by-diff/main/packages/protocol/schema.json#/$defs/chapter
-id: vapor-compiler
-title: "Vapor 编译器"
-fromDir: "90_web_application_essentials/050_patch_flags"
-toDir: "90_web_application_essentials/050_patch_flags"
-docs: https://book.chibivue.land/zh-cn/90-web-application-essentials/050-vapor/020-vapor-compiler

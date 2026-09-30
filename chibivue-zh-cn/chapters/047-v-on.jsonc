@@ -1,0 +1,70 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "v-on",
+  "title": "支持 v-on",
+  "fromDir": "50_basic_template_compiler/022_transform_expression",
+  "toDir": "50_basic_template_compiler/025_v_on",
+  "docs": "https://book.chibivue.land/zh-cn/50-basic-template-compiler/025-v-on",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/App.vue",
+      "kind": "D"
+    },
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/ast.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/babelUtils.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/codegen.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/compile.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/runtimeHelpers.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/compiler-core/transform.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transforms/transformElement.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transforms/transformExpression.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/compiler-core/transforms/vOn.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/compiler-core/utils.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/helpers/toHandlers.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

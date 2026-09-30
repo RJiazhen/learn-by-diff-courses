@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "other-apis",
+  "title": "其他响应式 API",
+  "fromDir": "30_basic_reactivity_system/140_effect_scope",
+  "toDir": "30_basic_reactivity_system/150_other_apis",
+  "docs": "https://book.chibivue.land/zh-cn/30-basic-reactivity-system/050-other-apis",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "examples/playground/vite.config.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/reactivity/baseHandler.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/reactivity/collectionHandlers.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/reactivity/index.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/reactivity/reactive.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/reactivity/ref.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}

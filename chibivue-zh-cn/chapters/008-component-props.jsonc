@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/RJiazhen/learn-by-diff/refs/heads/main/packages/protocol/schema.json#/$defs/chapter",
+  "id": "component-props",
+  "title": "组件 Props",
+  "fromDir": "10_minimum_example/050_component_system",
+  "toDir": "10_minimum_example/050_component_system2",
+  "docs": "https://book.chibivue.land/zh-cn/10-minimum-example/051-component-props",
+  "changedFiles": [
+    {
+      "path": "examples/playground/src/main.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/component.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/componentOptions.ts",
+      "kind": "M"
+    },
+    {
+      "path": "packages/runtime-core/componentProps.ts",
+      "kind": "U"
+    },
+    {
+      "path": "packages/runtime-core/renderer.ts",
+      "kind": "M"
+    },
+    {
+      "path": "tests/e2e.spec.ts",
+      "kind": "M"
+    }
+  ]
+}
